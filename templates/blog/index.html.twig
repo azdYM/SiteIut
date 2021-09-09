@@ -1,0 +1,226 @@
+{% extends "base.html.twig" %}
+{% block stylesheets %}
+<link rel="stylesheet" href="{{ asset('/css/blog.css') }}">
+    <link rel="stylesheet" href="{{ asset('/css/webfonts.css') }}">
+{% endblock %}
+
+{% block body %}
+    <div class="header row">
+        <div class="container-nav">
+            <div class="navbar row">
+                <div class="logo">
+                    <h1>iut</h1>
+                </div>
+                <div class="menu row justify-content">                  
+                    <!-- <div class="image"></div> -->
+                </div>
+                <a class="btn-connection"  href="#">S'identifier</a>
+            </div>
+            <div class="container-body">
+                <div class="left">
+                    <div class="content row">
+                        <div class="about">
+                            <h1 class="title">
+                                Lorem ipsum, dolor sit amet consectetur.
+                            </h1>
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid, necessitatibus aut. Aliquid! Lorem ipsum dolor sit.
+                            </p>
+                            <a href="#posts" class="btn">En savoir plus <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                        <div class="glob">
+                            <img src="{{asset('img/pages/not-authorized.png')}}" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="right row">
+                    <div class="icons">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-google-plus"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="nav-items">
+        <div class="items">
+            <a class="active" href="#educations">Educations</a>
+            <a href="#articles">Articles</a>
+            <a href="#activites">Activites</a>
+        </div>
+    </div>
+
+    <div id="container">
+
+        <div id="educations" data-spy class="container-code">
+            <div class="content-primary">
+                <h2 class="title-code">Rejoignez-nous pour une meilleure education</h2>
+                <div class="code-content">
+                    <i class="azad-parent"><span class="circle start"></span></i>
+                    <span class="color-gray">Vous voulez une education a la hauteur de vos esperances ? </span><span class="color-white">Venez decouvrir nos meilleurs professeurs et formations</span>
+
+                    <span class="btn-show-articles"><a href="#articles">read all articles </a><i class="fas fa-arrow-right"></i></span>
+                    <i class="left fas fa-book"></i><span class="font-size-2 connected">azad-YM <span class="color-gray"> s'est inscrit a iut il y'a 1 ans</span></span>
+                    <div class="user-connected-code">
+                        <span class="avatar-code"></span>
+                        <span class="color-gray">sudo apt install vscode</span>
+                    </div>
+                    <i class="azad-parent"><span class="circle end"></span></i>
+                    <div style="height: 50px;"></div>
+                    <div class="user-connected-code">
+                        <span class="avatar-code"></span>
+                        <span class="color-gray">cd project & code .</span>
+                    </div>
+                    <i class="azad-parent"><span class="circle end"></span></i>
+                </div>
+            </div>
+            <div class="content-secondary">
+                <div class="code-content">
+                    <div class="img-code">
+                        <img 
+                            src="{{asset('img/code.webp')}}" alt="">
+                        <div class="user-mode">
+                            <span class="color-gray"><i class="color-red">~ </i> / <i class="color-blue">azad-YM </i>/ <i class="color-green">SiteIut</i> : </span><span class="commande-code"><span class="color-green">gcc</span> main.c -o main</span>
+                        </div>
+                    </div>
+
+                    <div class="user-connected-code">
+                        <span class="avatar-code"></span>
+                        <span class="color-gray">support iut and partage on twitter</span>
+                    </div>
+                    <i class="azad-parent"><span class="circle end"></span></i>
+
+                    <div style="height: 20px;"></div>
+
+                    <div class="user-connected-code">
+                        <span class="avatar-code"></span>
+                        <span class="color-gray">create index.js</span>
+                    </div>
+                    <i class="azad-parent"><span class="circle end"></span></i>
+
+                    <div class="block-code">
+                        <div class="block-terminal">
+                            <div class="terminal-iut">
+                                <span class="color-gray">
+                                    <i class="color-red">~ </i> / <i class="color-blue">azad-YM </i>/ <i class="color-green">SiteIut</i> : 
+                                </span>
+                                <div class="typing color-gray">
+                                    <span class="color-green">npm</span> install educations<br>
+                                    + educations@4.2 <br>
+                                    &spades; added 109 package from 64 contributors and audited 109 package in 3.2210s <br><br>
+                                    9 package are looking for funding <br>
+                                    &MediumSpace; run 'npm fund' for details <br><br>
+
+                                    found 0 vulnerabilities <br>
+
+                                    <i class="color-red">~ </i> / <i class="color-blue">azad-YM </i>/ <i class="color-green">SiteIut</i> : 
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block-text reveal">
+                            <h3 class="color-blue reveal-1">Lorem ipsum dolor sit.</h3>
+                            <p class="reveal-2">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi eaque exercitationem porro numquam, alias maxime illo omnis doloribus nostrum dolor!
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="user-connected-code">
+                        <span class="avatar-code"></span>
+                        <span class="color-gray">exit</span>
+                    </div>
+                    <i class="azad-parent"><span class="circle end"></span></i>
+                </div>
+            </div>
+
+        </div>
+        <div id="articles" data-spy class="container-articles">
+            <div class="bar-articles">
+                <div class="bar-container row">
+                    <div class="bar-image">
+                        <img src="{{asset('img/pages/register600.png')}}" alt="">
+                    </div>
+                    <div class="bar-content">
+                        <h3>Looking for a special article ?</h3>
+                        <div class="search-articles">
+                            <input type="text" placeholder="What are you looking for">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <div class="search-cateogries">
+                            <select name="" id="" aria-checked="true">
+                                <option value="all-categorie" selected>All categories</option>
+                                <option  aria-checked="mixed" value="digital">Digital</option>
+                                <option value="digital">Developpement web</option>
+                                <option value="digital">Hacking</option>
+                                <option value="digital">Genie civil</option>
+                                <option value="digital">Economie</option>
+                                <option value="digital">Entrepreunaria</option>
+        
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="show-all-articles">
+                <h2>All Articles</h2>
+                <div class="show-articles row">
+                    <div class="article">
+                        <div class="article-img">
+
+                        </div>
+                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                        <span class="article-autheur">Created by Azad-YM</span>
+                        <span class="article-categorie">Digitals</span>
+                    </div>
+
+                    <div class="article">
+                        <div class="article-img">
+
+                        </div>
+                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                        <span class="article-autheur">Created by Azad-YM</span>
+                        <span class="article-categorie">Digitals</span>
+                    </div>
+
+                    <div class="article">
+                        <div class="article-img">
+
+                        </div>
+                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                        <span class="article-autheur">Created by Azad-YM</span>
+                        <span class="article-categorie">Digitals</span>
+                    </div>
+
+                    <div class="article">
+                        <div class="article-img">
+
+                        </div>
+                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                        <span class="article-autheur">Created by Azad-YM</span>
+                        <span class="article-categorie">Digitals</span>
+                    </div>
+
+                    <div class="article">
+                        <div class="article-img">
+
+                        </div>
+                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                        <span class="article-autheur">Created by Azad-YM</span>
+                        <span class="article-categorie">Digitals</span>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div data-spy id="activites" style="background-color: red; height: 900px;"></div>
+    </div>
+{% endblock %}
+
+{% block javascripts %}
+    <script src="{{asset('js/blog.js')}}"></script>
+{% endblock %}
